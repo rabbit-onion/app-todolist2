@@ -1,12 +1,10 @@
-"use client"
+'use client';
 
-import Todo from "@/components/Todo";
-import { useContext } from "react";
-import { ThemeContext } from "./layout";
+import Todo from '@/components/Todo';
+import { useTheme } from '@/contexts/ThemeContext';
 
 export default function Home() {
-
-  const theme = useContext(ThemeContext)
+  const theme = useTheme();
 
   return (
     <div className={theme.background}>
